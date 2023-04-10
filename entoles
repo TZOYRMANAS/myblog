@@ -1,0 +1,8 @@
+wget https://github.com/cfenollosa/bashblog/archive/refs/heads/master.zip
+unzip master.zip 
+chmod +x bb.sh
+mkdir myblog
+cd myblog
+nano $HOME/.bashrc [ export EDITOR=/bin/nano ]
+../bb.sh post
+../bb.sh post -html
